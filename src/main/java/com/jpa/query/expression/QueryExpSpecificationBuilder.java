@@ -167,7 +167,7 @@ public class QueryExpSpecificationBuilder {
 	public static QueryExpSpecificationSimple lte(String fieldName, Object value, boolean ignoreNull) {
 		if (StringUtils.isEmpty(value))
 			return null;
-		return new QueryExpSpecificationSimple(fieldName, value, Operator.GTE);
+		return new QueryExpSpecificationSimple(fieldName, value, Operator.LTE);
 	}
 
 	/**
@@ -186,7 +186,7 @@ public class QueryExpSpecificationBuilder {
 	public static QueryExpSpecificationSimple gte(String fieldName, Object value, boolean ignoreNull) {
 		if (StringUtils.isEmpty(value))
 			return null;
-		return new QueryExpSpecificationSimple(fieldName, value, Operator.LTE);
+		return new QueryExpSpecificationSimple(fieldName, value, Operator.GTE);
 	}
 
 	/**
